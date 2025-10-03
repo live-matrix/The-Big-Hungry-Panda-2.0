@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Hungry Panda - Food Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo.png"/>
+
+    <!-- Link Preview -->
+    <meta property="og:title" content="The Big Hungry Panda" />
+    <meta property="og:description" content="Big appetite. Bigger stories. Dive into food reviews and discoveries from streets, cafés, and hidden gems across Asia." />
+    <meta property="og:image" content="https://thebighungrypanda.com/assets/images/logoH.png" />
+    <meta property="og:url" content="https://thebighungrypanda.com/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen">
+
+<!-- Header -->
+<header class="bg-white/100 backdrop-blur-md shadow-sm sticky top-0 z-50 fade-in">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Home</a>
+                <a href="../reviews/reviews.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Reviews</a>
+            </div>
+            <div class="flex items-center">
+                <img src="../assets/images/logoH.png" alt="Logo" class="h-13 w-auto">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="../portfolio/portfolio.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Portfolio</a>
+                <a href="#" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">About Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden text-center">
+            <a href="../index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Home</a>
+            <a href="../reviews/reviews.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Reviews</a>
+            <a href="../portfolio/portfolio.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Portfolio</a>
+            <a href="#" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">About Us</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Page Header -->
+<section class="py-16 px-6 text-center fade-in">
+    <div class="container mx-auto max-w-4xl">
+        <h1 class="text-4xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-6"> The Story So Far </h1>
+        <div class="w-32 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-6"></div>
+        <p class="text-xl text-gray-600 leading-relaxed">
+            Blending a passion for food and photography, this blog is my way of sharing adventures that taste as good as they look    
+        </p>
+    </div>
+</section>
+
+ <!-- Our Story Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Story Content -->
+                <div class="fade-in">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">From India to Southeast Asia... With the World Still Waiting</h2>
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p>
+                            The Big Hungry Panda isn’t about chasing every stamp on the passport — it’s about savoring the places I have been lucky enough to explore and sharing those experiences honestly. My journey with food started close to home, visiting cafés, eateries, and street-side stalls across different states in India. Each stop left its own flavor, reminding me that good food is everywhere if you know where to look.    
+                        </p>
+                        <p>
+                            A few adventures have taken me outside India, where food became the highlight of my travels. In Thailand, I explored the vibrant streets of Bangkok, enjoyed the comforting flavors of Chiang Mai, and soaked in the coastal vibes of Phuket. Vietnam added another unforgettable chapter — from steaming bowls of pho in Hanoi to the fresh herbs of Hoi An, from the mountain charm of Sapa to the bustling food culture of Da Nang and Saigon.    
+                        </p>
+                        <p>
+                            These journeys may not span the globe, but they’ve given me more than enough stories to tell. Every review here comes from a real bite, a real table, and a real moment that I hope will inspire fellow food lovers to seek their own discoveries.    
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visual Element with Image -->
+                <div class="fade-in">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="../assets/images/vietComp12gif.gif" alt="Our Culinary Journey" class="w-full h-[700px] object-cover rounded-3xl">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Behind the Name Section -->
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-[25px] sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">The Story Behind the Name</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">How "The Big Hungry Panda" came to life</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Side Image -->
+                <div class="fade-in">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                        <div class="fade-in">
+                            <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                                <img src="../assets/images/VietCom.gif" alt="Story Behind the Name" class="w-full h-[900px] object-cover rounded-3xl">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Story Content -->
+                <div class="fade-in">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p>
+                            The name “The Big Hungry Panda” wasn’t the result of branding or strategy — it started as a joke. Long before I ever thought of blogging, I was that person who would hop between food joints, eat like there was no tomorrow, and casually flood my Instagram stories with pictures of whatever was on my plate. One day, a friend teased me and said, “You should just start a food page — call it The Hungry Panda!” I laughed it off, thinking it was just another silly idea.
+                        </p>
+                        
+                        <p>
+                            But weeks later, while on a solo trek, I found myself replaying those words. Sitting on a mountain top, watching the view after pitching my tent, I thought about how much joy I got from food and sharing it. Maybe starting a blog wasn’t such a crazy idea. The name, though, needed something more. “The Hungry Panda” sounded fun, but it didn’t fully capture my appetite. So I added one word: Big.
+                        </p>
+                        
+                        <p>
+                            The “Big” isn’t about size — I’m tall, yes, but not huge. It’s about appetite. Back then, I could devour meals that would shock most people, and even today, I still carry that spirit of curiosity and hunger for new flavors.
+                        </p>
+                        
+                        <p>
+                            That’s how The Big Hungry Panda was born: out of a casual joke, a huge appetite, and the simple joy of sharing food experiences. What started with random Instagram stories has now grown into a space where my passion for eating, exploring, and photographing food comes together. And honestly, I wouldn’t have it any other way.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What We Stand For</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">The principles that guide every review, every recommendation, and every adventure.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="text-5xl mb-6">🎯</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Authenticity</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We seek genuine experiences and honest flavors, celebrating both traditional techniques and innovative approaches to cuisine.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="text-5xl mb-6">🤝</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Respect</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every chef, every server, every food vendor has a story. We approach each experience with respect for the craft and culture behind it.
+                    </p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg text-center">
+                    <div class="text-5xl mb-6">💫</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Discovery</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        From hidden gems to celebrated establishments, we're always searching for experiences that surprise, delight, and inspire.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Write to Us Section -->
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Write to Us</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">
+                    Have a restaurant recommendation? Want to collaborate? Or just want to share your own food adventure? We'd love to hear from you!
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="fade-in">
+                <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe1N3_vxLg35jJ_WeVMuNcYKXHUJRAj620zOEoUfmhcMzvuYQ/formResponse" 
+                    method="POST" target="hidden_iframe" 
+                    onsubmit="submitted=true;" 
+                    class="bg-gradient-to-br from-orange-50 to-pink-50 rounded-3xl p-8 shadow-lg">
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Your Name *</label>
+                    <input type="text" name="entry.1489235253" required 
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none">
+                    </div>
+                    <div>
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                    <input type="email" name="entry.1013636992" required 
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none">
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Your Message *</label>
+                    <textarea name="entry.1470790906" rows="6" required
+                            placeholder="Tell us about your favorite restaurant..."
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none resize-none"></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" 
+                            class="submit-btn px-8 py-4 text-white font-semibold rounded-xl inline-flex items-center bg-gradient-to-r from-orange-500 to-pink-500 hover:scale-105 transition">
+                    Send Message
+                    </button>
+                </div>
+                </form>
+
+                <!-- Hidden iframe to prevent redirect -->
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+            </div>
+
+            <br>
+
+            <!-- Success Message -->
+            <div id="successMessage" class="success-message bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-xl mb-8 text-center">
+                <div class="flex items-center justify-center mb-2">
+                    <div class="text-2xl mr-2">✅</div>
+                    <h3 class="font-bold">Message Sent Successfully!</h3>
+                </div>
+                <p>Thank you for reaching out! We'll get back to you within 24-48 hours.</p>
+            </div>
+
+        </div>
+    </section>
+ 
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12 fade-in">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <div class="space-y-2">
+                    <a href="../index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Home</a>
+                    <a href="../reviews/reviews.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Reviews</a>
+                    <a href="../portfolio/portfolio.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Portfolio</a>
+                    <a href="#" class="block text-gray-300 hover:text-orange-400 transition-colors">About Us</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <img src="../assets/images/logo_small.png" alt="Logo" class="h-[100px] w-auto mb-3">
+                <p class="text-2xl font-bold">The Big Hungry Panda</p>
+                <p class="text-gray-400 font-medium text-lg">Always Hungry</p>
+            </div>
+            <div>
+                <div class="flex justify-center md:justify-end">
+                    <div class="inline-block">
+                        <h3 class="text-lg font-semibold mb-4 text-center md:text-right">Follow Us</h3>
+                        <a href="https://instagram.com/thebighungrypanda" target="_blank" rel="noopener noreferrer"
+                        class="block mx-auto w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                        <i class="fab fa-instagram text-white text-xl"></i>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2025 The Big Hungry Panda. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

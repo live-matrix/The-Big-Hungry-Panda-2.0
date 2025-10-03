@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Hungry Panda - Food Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../../assets/images/logo.png"/>
+
+    <!-- Link Preview -->
+    <meta property="og:title" content="The Big Hungry Panda" />
+    <meta property="og:description" content="Big appetite. Bigger stories. Dive into food reviews and discoveries from streets, cafés, and hidden gems across Asia." />
+    <meta property="og:image" content="https://thebighungrypanda.com/assets/images/logoH.png" />
+    <meta property="og:url" content="https://thebighungrypanda.com/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body class="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen">
+
+<!-- Header -->
+<header class="bg-white/100 backdrop-blur-md shadow-sm sticky top-0 z-50 fade-in">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="hidden md:flex space-x-8">
+                <a href="../../../home/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Home</a>
+                <a href="../../../reviews/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Reviews</a>
+            </div>
+            <div class="flex items-center">
+                <img src="../../../assets/images/logoH.png" alt="Logo" class="h-13 w-auto">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="../../../portfolio/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Portfolio</a>
+                <a href="../../../about/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">About Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden text-center">
+            <a href="../../../home/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Home</a>
+            <a href="../../../reviews/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Reviews</a>
+            <a href="../../../portfolio/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Portfolio</a>
+            <a href="../../../about/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">About Us</a>
+        </div>
+    </nav>
+</header>
+
+<body class="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen">
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid lg:grid-cols-3 gap-12">
+            
+            <!-- Left Side - Detailed Review -->
+            <div class="lg:col-span-2">
+
+                <!-- Restaurant Header -->
+                <div class="fade-in mb-8">
+                    <div class="flex items-center mb-4">
+                        <a href="../../../reviews/Chennai/index.html" class="text-orange-500 hover:text-orange-600 font-medium mr-3">← Back to Reviews</a>
+                        <span class="text-gray-400">|</span>
+                        <span class="text-gray-600 ml-3">Chennai, India</span>
+                    </div>
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">The Farm Restaurant</h1>
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 mr-3">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <span class="text-gray-600 font-medium">5.0 Overall Rating</span>
+                        <span class="mx-3 text-gray-400">•</span>
+                        <span class="text-gray-600">Reviewed 20 September 2022</span>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="fade-in mb-8">
+                    <section class="relative w-full h-[250px] m:h-[400px] md:h-[500px] flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden mb-16">
+                        <img src="../../../assets/images/Restaurants/Interiors/Farm Int.jpg" 
+                            alt="Restaurant Interior" 
+                            class="w-full h-full object-cover">
+                    </section>
+                </div>
+
+                <!-- Review Content -->
+                <div class="fade-in">
+                    <div class="prose prose-lg max-w-none">
+                        
+                        <!-- Introduction -->
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"> <center> Beyond the City Buzz: A Culinary Escape at The Farm </center> </h2> 
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Tucked away from the chaos of Chennai’s traffic and constant city buzz, there exists a little escape that feels almost like stepping into a slower, better world. The Farm is not just a restaurant — it’s an experience woven out of soil, seasons, and sincerity. As one of the few true farmstead artisanal cheese makers in India, their ethos of 100% organic farming goes beyond buzzwords; it’s visible in the lush greenery around you, the animals grazing nearby, and most importantly, in every dish that makes its way to your table. There’s an authenticity here that feels rare — where what you eat connects directly to the land it comes from.     
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                What makes The Farm even more inviting is its rustic charm. You’ll likely be greeted by open courtyards shaded by trees, wooden tables that blend seamlessly with their natural surroundings, and an easy, unhurried rhythm to the service. It’s the kind of place where you don’t just eat; you soak in the moment — whether that’s sipping on fresh lemonade while the breeze carries the scent of earth and herbs, or watching a plate of thoughtfully plated food arrive with quiet confidence. This atmosphere sets the perfect stage for what follows: food that feels both elevated and grounded at the same time.    
+                            </p>
+                        </div>
+
+                        <!-- Introduction -->
+                        <div class="mb-8">
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> <center> Here's What I Had </center> </h2>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">  Summer Cheese Plate - Rs 500 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                A Burst Of Rugged, Mediterranean Goodness, This Summer Cheese Plate Could Mentally Transport You To Santorini! While One Might Visualise A Slew Of Cheeses As On A ‘cheese Board’ When Hearing ‘Cheese Plate’, This Has Brined Peppers Stuffed With Marinated, Piquant Feta Instead. There’s Also Olives & Walnuts To Go Around, & All Of Them Rest On A Bed Of Sea Salt & That Evergreen Herb, Thyme. All Of The Carefully Curated Ingredients Complete Each Other, Not Just Complement. Brava!     
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Goan Sausage Fry - Rs 550 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                “Yo Baile Yo!” Well, That’s What I Sang To Myself On The Inside While Hogging (Sorry Not Sorry XD) On The Earthy, Punchy Goan Chorizo. Chorizo Is A Pork Sausage That’s Spicy From The Red Chilli Spice Mix, & Pungent From The Coconut Vinegar It’s All Soaked In. The Wicked Mix Is Then Stuffed Into An Artificial Casing & Smoked For A Full-bodied, Fiery Flavour. Only Helps That These Fresh In-House Sausages Are Smoked With Mango-Wood Chips From Their Own Plantation. While Munching On This And The Delectably Fried Hasselback Potatoes, You May Even Consider Buying Links Of These At Once. Now Say It With Me “O Maria Pitashe!”    
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Old Fashioned Chocolate Cake - Rs 300 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Cake. You Can Have It & Eat It Too. Just Parcel One Home. You’ll Know What I Mean When You See This Old-Timers Beauty, Moist & Multi-Layered With Ganache. Some More Chocolate Cake? It’s The Godfather Of Confection, After All.    
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">  Italian Style Ricotta Cheesecake - Rs 300  </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Ricotta Cheesecakes Have Been The Way To Go In Italia Ever Since The Dish Popped Into The Public Eye. Why Mention That? Because It’s Not Cream Cheese As Used In The States. Ricotta Makes It Lighter, Grainier & Less Sickeningly Saccharine (If At All). It’s Topped With An (Again ? Do I Really Have To Specify It) In-House Strawberry Compote.    
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Bacon & Caramel Icecream - Rs 300 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                While Chewy Pork Bacon In Ice Cream Might Sound Counter-Intuitive As A Combination, It’s Stuck Around For 30 Years Now, All The While Kicking. It’s Salty, Sweet & Only Faintly Meaty. A Perfect Boost To The Already Expressive Milk Caramel.    
+                            </p>       
+        
+                        </div>
+
+                        <!-- Rating Summary -->
+                        <div class="bg-gradient-to-r from-orange-100 to-pink-100 p-8 rounded-2xl">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"> <center> Final Thoughts </center> </h2> 
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    Walking away from The Farm, you don’t just leave with a full stomach — you carry with you the memory of flavors that feel rooted, honest, and unpretentious. It’s a place that reminds you what food should be: fresh, soulful, and connected to where it comes from. In a city where restaurants are often about quick bites and fleeting trends, The Farm is about slowing down, savoring, and maybe even pausing to think about the journey of your meal. Whether you’re a cheese lover, a curious foodie, or simply someone in search of a meal that nourishes both appetite and spirit, this is one of Chennai’s most rewarding escapes.    
+                                </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Restaurant Info -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-24">
+                    
+                    <!-- Ratings Card -->
+                    <div class="info-card fade-in">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Restaurant Ratings</h3>
+                        
+                        <!-- Service Rating -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xl text-gray-700">Service</span>
+                                <span class="text-xl text-gray-600">5.0/5</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Food Quality Rating -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xl text-gray-700">Food Quality</span>
+                                <span class="text-xl text-gray-600">5.0/5</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Value For Money Rating -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xl text-gray-700">Value for Money</span>
+                                <span class="text-xl text-gray-600">4.0/5</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Halal Status -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl text-gray-700">Halal Certified</span>
+                                <span class="halal-badge halal-no">
+                                    Not Halal
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Overall Rating -->
+                        <div class="border-t pt-4">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-gray-800">Overall Rating</span>
+                                <div class="flex items-center">
+                                    <span class="text-2xl font-bold text-orange-500 mr-2">5.0</span>
+                                    <div class="star-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location & Contact Card -->
+                    <div class="info-card fade-in">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Location & Contact</h3>
+                        
+                        <!-- Map Embed -->
+                        <div class="mt-6">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4887.367301814413!2d80.2269439!3d12.866814500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525ba66065e619%3A0x41f82bd676716546!2sThe%20Farm%20Restaurant!5e1!3m2!1sen!2sin!4v1758965175743!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <br>
+                        
+                        <!-- Address -->
+                        <div class="mb-4">
+                            <div class="flex items-start">
+                                <div class="text-orange-500 mr-3 mt-1">📍</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Address</p>
+                                    <p class="text-gray-600 text-sm">1-277, Rajiv Gandhi Salai,<br>Semmancheri, Chennai,<br> Tamil Nadu 600119</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-4">
+                            <div class="flex items-center">
+                                <div class="text-orange-500 mr-3">📞</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Phone</p>
+                                    <a href="tel:+81335571496" class="text-orange-500 hover:text-orange-600 text-sm">+91 91760-50562</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="mb-4">
+                            <div class="flex items-start">
+                                <div class="text-orange-500 mr-3 mt-1">🕐</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Hours</p>
+                                    <p class="text-gray-600 text-sm">Mon: Closed<br>Tue - Sun: 11:00 AM - 7:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Range -->
+                        <div class="mb-6">
+                            <div class="flex items-center">
+                                <div class="text-orange-500 mr-3">💰</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Price Range</p>
+                                    <p class="text-gray-600 text-sm"> ₹ 1,200 - ₹ 2,500 per person</p>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Instagram -->
+                        <div class="mb-6">
+                            <div class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <i class="fab fa-instagram text-pink-500 text-2xl hover:scale-110 transition-transform"></i>
+                                
+                                <!-- Text -->
+                                <div>
+                                    <p class="font-medium text-gray-800">Instagram</p>
+                                    <a href="https://instagram.com/thefarmchennai" target="_blank" rel="noopener noreferrer" 
+                                        class="text-gray-600 text-sm hover:underline">
+                                        @thefarmchennai
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reservation Note -->
+                        <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                            <div class="flex items-start">
+                                <div class="text-yellow-600 mr-2">⚠️</div>
+                                <div>
+                                    <p class="font-medium text-yellow-800 text-sm">Reservation Required On Weekends<br>Weekdays Walk-In</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- Food Gallery -->
+<section class="py-16 px-6 bg-gray-50">
+    <div class="container mx-auto max-w-6xl">
+        <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">Food Gallery</h3>
+        <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-8"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Item -->
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Summer Cheese Plate.webp" 
+             alt="Mr Bobs Fried Chicken Burger" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Summer Cheese Plate</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Goan Sausage Fry.webp" 
+             alt="The Sausage Crater" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Goan Sausage Fry</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Old Fshioned Chocolate Cake.webp" 
+             alt="Kimchi Korean Bun" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Old Fashioned Chocolate Cake</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Italian Style Ricotta Cheesecake.webp" 
+             alt="Chilli Cheese Toast" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Italian Style Ricotta Cheesecake</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Bacon & Caramel Icecream.webp" 
+             alt="BBQ Chicken Bun" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Bacon & Caramel Icecream/p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12 fade-in">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <div class="space-y-2">
+                    <a href="../../../home/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Home</a>
+                    <a href="../../../reviews/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Reviews</a>
+                    <a href="../../../portfolio/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Portfolio</a>
+                    <a href="../../../about/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">About Us</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <img src="../../../assets/images/logo_small.png" alt="Logo" class="h-[100px] w-auto mb-3">
+                <p class="text-2xl font-bold">The Big Hungry Panda</p>
+                <p class="text-gray-400 font-medium text-lg">Always Hungry</p>
+            </div>
+            <div>
+                <div class="flex justify-center md:justify-end">
+                    <div class="inline-block">
+                        <h3 class="text-lg font-semibold mb-4 text-center md:text-right">Follow Us</h3>
+                        <a href="https://instagram.com/thebighungrypanda" target="_blank" rel="noopener noreferrer"
+                            class="block mx-auto w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-instagram text-white text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2025 The Big Hungry Panda. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../../../assets/js/script.js"></script>
+</body>
+</html>

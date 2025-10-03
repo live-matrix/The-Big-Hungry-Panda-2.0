@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Hungry Panda - Food Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo.png"/>
+
+    <!-- Link Preview -->
+    <meta property="og:title" content="The Big Hungry Panda" />
+    <meta property="og:description" content="Big appetite. Bigger stories. Dive into food reviews and discoveries from streets, cafés, and hidden gems across Asia." />
+    <meta property="og:image" content="https://thebighungrypanda.com/assets/images/logoH.png" />
+    <meta property="og:url" content="https://thebighungrypanda.com/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen">
+
+<!-- Header -->
+<header class="bg-white/100 backdrop-blur-md shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+
+            <!-- Left Nav Links (Desktop) -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Home</a>
+                <a href="reviews/reviews.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Reviews</a>
+            </div>
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="assets/images/logoH.png" alt="Logo" class="h-13 w-auto">
+            </div>
+
+            <!-- Right Nav Links (Desktop) -->
+            <div class="hidden md:flex space-x-8">
+                <a href="portfolio/portfolio.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Portfolio</a>
+                <a href="about/about.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">About Us</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden text-center">
+            <a href="index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Home</a>
+            <a href="reviews/reviews.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Reviews</a>
+            <a href="portfolio/portfolio.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Portfolio</a>
+            <a href="about/about.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">About Us</a>
+        </div>
+    </nav>
+</header>
+
+        <!-- Hero Carousel Section -->
+<section class="relative h-96 md:h-[500px] lg:h-[800px] carousel-container fade-in">
+
+    <!-- Carousel Slides -->
+    <div class="carousel-slide active w-full h-full overflow-hidden">
+        <img src="assets/images/Brod.webp" alt="Food Image" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <div class="carousel-slide w-full h-full overflow-hidden">
+        <img src="assets/images/Phuket.webp" alt="Food Image" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <div class="carousel-slide w-full h-full overflow-hidden">
+        <img src="assets/images/Farm.webp" alt="Food Image" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <div class="carousel-slide w-full h-full overflow-hidden">
+        <img src="assets/images/FC1.webp" alt="Food Image" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <div class="carousel-slide w-full h-full overflow-hidden">
+        <img src="assets/images/Manam.webp" alt="Food Image" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Fixed Overlay Text -->
+    <div class="absolute inset-0 flex items-center justify-center">
+        <div class="text-center text-white p-6">
+            <h2 class="text-5xl font-bold mb-2 drop-shadow-lg">Join Me on a Journey of Taste</h2>
+            <p class="text-xl drop-shadow-md">where every meal becomes a memory!</p>
+        </div>
+    </div>
+
+    <!-- Dot Indicators -->
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+        <div class="dot w-3 h-3 rounded-full bg-white/50 active" onclick="currentSlide(1)"></div>
+        <div class="dot w-3 h-3 rounded-full bg-white/50" onclick="currentSlide(2)"></div>
+        <div class="dot w-3 h-3 rounded-full bg-white/50" onclick="currentSlide(3)"></div>
+        <div class="dot w-3 h-3 rounded-full bg-white/50" onclick="currentSlide(4)"></div>
+        <div class="dot w-3 h-3 rounded-full bg-white/50" onclick="currentSlide(5)"></div>
+    </div>
+</section>
+
+
+        <!-- Brief Introduction Section -->
+        <section class="py-16 px-6">
+            <div class="container mx-auto max-w-4xl">
+                <div class="text-center fade-in">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">The Big Hungry Panda</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-8"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                        Welcome to a space made for everyone who believes food is more than just a meal!  it’s a story, an experience, and sometimes, pure magic. This blog is my little corner on the internet where I share reviews from the places I’ve visited, from street-side gems to cozy cafés and buzzing restaurants. Each review is my honest take, served with a side of curiosity and excitement.    
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                        Along the way, you’ll also get a glimpse of my journey as a photographer. Food isn’t just something I eat, it’s something I capture, savour, and share with you through both words and pictures. Think of this space as your friendly guide to discovering delicious spots, while also peeking into the creative lens I see the world through.    
+                    </p>
+                    <div class="flex justify-center space-x-6 mt-12">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                            <div class="card-hover bg-white rounded-xl p-8 shadow-lg text-center">
+                                <div class="text-4xl mb-3">🌍</div>
+                                <h3 class="font-semibold text-gray-800 mb-2">3+ Countries</h3>
+                                <p class="text-gray-600 text-sm">Explored & Tasted</p>
+                            </div>
+
+                            <div class="card-hover bg-white rounded-xl p-8 shadow-lg text-center">
+                                <div class="text-4xl mb-3">🍽️</div>
+                                <h3 class="font-semibold text-gray-800 mb-2">100+ Restaurants</h3>
+                                <p class="text-gray-600 text-sm">Reviewed & Rated</p>
+                            </div>
+
+                            <div class="card-hover bg-white rounded-xl p-8 shadow-lg text-center">
+                                <div class="text-4xl mb-3">📸</div>
+                                <h3 class="font-semibold text-gray-800 mb-2">1000+ Photos</h3>
+                                <p class="text-gray-600 text-sm">Captured & Shared</p>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Reviews Section -->
+        <section class="py-16 px-6 bg-white">
+            <div class="container mx-auto max-w-7xl">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Reviews</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600">Discover our most memorable culinary experiences from around the world</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <!-- Featured Review 1 -->
+                    <div class="card-hover relative rounded-2xl overflow-hidden shadow-lg">
+                    <!-- Image Background -->
+                    <div class="h-48 relative">
+                        <img src="assets/images/Restaurants/Interiors/Buco Int.jpeg" alt="Jiro's Sushi" class="w-full h-full object-cover">
+
+                        <!-- Overlay for readability -->
+                        <div class="absolute inset-0 bg-black/30"></div>
+
+                        <!-- Restaurant Name Centered -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-lg text-center">
+                                BuCo.
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6 bg-white">
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 mr-2">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <span class="text-sm text-gray-500">Mangalore, India</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">From Red Oxide Floors to Heavenly Cheesecakes</h4>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            It’s minimal yet nostalgic, and the comfort in its design makes you want to linger,...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-orange-500 font-semibold">$$$$$</span>
+                            <button class="text-orange-500 hover:text-orange-600 font-medium transition-colors"> <a href="reviews/mangalore/Buco/index.html">Read Full Review → </a> </button>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <!-- Featured Review 2 -->
+                    <div class="card-hover relative rounded-2xl overflow-hidden shadow-lg">
+                    <!-- Image Background -->
+                    <div class="h-48 relative">
+                        <img src="assets/images/restaurants/temp4.webp" alt="Jiro's Sushi" class="w-full h-full object-cover">
+
+                        <!-- Overlay for readability -->
+                        <div class="absolute inset-0 bg-black/30"></div>
+
+                        <!-- Restaurant Name Centered -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-lg text-center">
+                                Eventide Coffee    
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6 bg-white">
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 mr-2">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <span class="text-sm text-gray-500">Chennai, India</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">An Unforgettable Omakase Experience</h4>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            The legendary Jiro's attention to detail is unmatched. Each piece of sushi was a masterpiece...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-orange-500 font-semibold">$$$$$</span>
+                            <button class="text-orange-500 hover:text-orange-600 font-medium transition-colors"> <a href="reviews/index.html"> Read Full Review → </a> </button>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <!-- Featured Review 3 -->
+                    <div class="card-hover relative rounded-2xl overflow-hidden shadow-lg">
+                    <!-- Image Background -->
+                    <div class="h-48 relative">
+                        <img src="assets/images/restaurants/temp5.webp" alt="Jiro's Sushi" class="w-full h-full object-cover">
+
+                        <!-- Overlay for readability -->
+                        <div class="absolute inset-0 bg-black/30"></div>
+
+                        <!-- Restaurant Name Centered -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-xl md:text-2xl font-bold text-white drop-shadow-lg text-center">
+                                Jiro's Sushi
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6 bg-white">
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400 mr-2">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <span class="text-sm text-gray-500">Tokyo, Japan</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">An Unforgettable Omakase Experience</h4>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            The legendary Jiro's attention to detail is unmatched. Each piece of sushi was a masterpiece...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-orange-500 font-semibold">$$$$$</span>
+                            <button class="text-orange-500 hover:text-orange-600 font-medium transition-colors"> <a href="../reviews/index.html"> Read Full Review → </a> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                <div class="text-center mt-12">
+                    <a href="reviews/reviews.html" class="inline-flex items-center px-8 py-3 bg-gradient-to-r from-orange-400 to-pink-400 text-white font-semibold rounded-full hover:from-orange-500 hover:to-pink-500 transition-all transform hover:scale-105 shadow-lg">
+                        View All Reviews
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                    <!-- Quick Links (left) -->
+                    <div class="text-center md:text-left">
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <div class="space-y-2">
+                        <a href="home/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Home</a>
+                        <a href="reviews/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Reviews</a>
+                        <a href="portfolio/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Portfolio</a>
+                        <a href="about/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">About Us</a>
+                        </div>
+                    </div>
+
+                    <!-- Logo (center) -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="assets/images/logo_small.png" alt="Logo" class="h-[100px] w-auto mb-3">
+                        <p class="text-2xl font-bold">The Big Hungry Panda</p>
+                        <p class="text-gray-400 font-medium text-lg">Always Hungry</p>
+                    </div>
+
+                    <!-- Follow Us (right; icon centered under heading) -->
+                    <div>
+                        <!-- outer flex: centers block on mobile, pushes to right on md+ -->
+                        <div class="flex justify-center md:justify-end">
+                            <!-- inline-block sizing makes width equal to heading width,
+                                so the block can be pushed to the right while icon can be centered inside it -->
+                            <div class="inline-block">
+                                <!-- heading: centered on mobile, right-aligned on md+ -->
+                                <h3 class="text-lg font-semibold mb-4 text-center md:text-right">Follow Us</h3>
+                                <!-- icon block: mx-auto centers it under the heading (inside the inline-block) -->
+                                <a href="https://instagram.com/thebighungrypanda" target="_blank" rel="noopener noreferrer"
+                                    class="block mx-auto w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-instagram text-white text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                    <p class="text-gray-400">&copy; 2025 The Big Hungry Panda. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- External JS -->
+        <script src="assets/js/script.js"></script>
+
+    </body>
+</html>
+
+
+    
+
+
+
+
+    
+

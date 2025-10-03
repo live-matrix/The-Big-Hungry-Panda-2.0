@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Hungry Panda - Food Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../../assets/images/logo.png"/>
+
+    <!-- Link Preview -->
+    <meta property="og:title" content="The Big Hungry Panda" />
+    <meta property="og:description" content="Big appetite. Bigger stories. Dive into food reviews and discoveries from streets, cafés, and hidden gems across Asia." />
+    <meta property="og:image" content="https://thebighungrypanda.com/assets/images/logoH.png" />
+    <meta property="og:url" content="https://thebighungrypanda.com/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body class="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen">
+
+<!-- Header -->
+<header class="bg-white/100 backdrop-blur-md shadow-sm sticky top-0 z-50 fade-in">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="hidden md:flex space-x-8">
+                <a href="../../../home/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Home</a>
+                <a href="../../../reviews/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Reviews</a>
+            </div>
+            <div class="flex items-center">
+                <img src="../../../assets/images/logoH.png" alt="Logo" class="h-13 w-auto">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="../../../portfolio/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Portfolio</a>
+                <a href="../../../about/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">About Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden text-center">
+            <a href="../../../home/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Home</a>
+            <a href="../../../reviews/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Reviews</a>
+            <a href="../../../portfolio/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Portfolio</a>
+            <a href="../../../about/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">About Us</a>
+        </div>
+    </nav>
+</header>
+
+<body class="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen">
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid lg:grid-cols-3 gap-12">
+            
+            <!-- Left Side - Detailed Review -->
+            <div class="lg:col-span-2">
+
+                <!-- Restaurant Header -->
+                <div class="fade-in mb-8">
+                    <div class="flex items-center mb-4">
+                        <a href="../../../reviews/mangalore/index.html" class="text-orange-500 hover:text-orange-600 font-medium mr-3">← Back to Reviews</a>
+                        <span class="text-gray-400">|</span>
+                        <span class="text-gray-600 ml-3">Mangalore, India</span>
+                    </div>
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">BuCo.</h1>
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 mr-3">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <span class="text-gray-600 font-medium">5.0 Overall Rating</span>
+                        <span class="mx-3 text-gray-400">•</span>
+                        <span class="text-gray-600">Reviewed March 2024</span>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="fade-in mb-8">
+                    <section class="relative w-full h-[250px] m:h-[400px] md:h-[500px] flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden mb-16">
+                        <img src="../../../assets/images/interior1.jpeg" 
+                            alt="Restaurant Interior" 
+                            class="w-full h-full object-cover">
+                    </section>
+                </div>
+
+                <!-- Review Content -->
+                <div class="fade-in">
+                    <div class="prose prose-lg max-w-none">
+                        
+                        <!-- Introduction -->
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"> <center> From Red Oxide Floors to Heavenly Cheesecakes </center> </h2> 
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                 Reopened its doors towards December 2022, this little artisanal bakery has been cooking up quite a storm in the city ever since.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                The interiors of Buco draw inspiration from the warmth of a typical Mangalorean home – red oxide flooring, terracotta hues, wooden textures, and open airy windows that flood the café with natural light. It’s minimal yet nostalgic, and the comfort in its design makes you want to linger, whether for a quick coffee or a long chatty brunch.    
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                What really makes Buco stand out, though, is the consistency of their food and drinks. No matter when you go – weekday or weekend – the flavors, presentation, and quality always remain top-notch. Every plate that comes out of their kitchen looks like it belongs on Instagram, but more importantly, tastes as good as it looks.    
+                            </p>
+                        </div>
+
+                        <!-- Introduction -->
+                        <div class="mb-8">
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> <center> Here's What I Had </center> </h2>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">  Mr Bobs Fried Chicken Burger - Rs 295 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                 A crowd-pleaser! The burger comes with a thick, crispy fried chicken fillet that’s juicy inside and golden on the outside. The seasoning is on point – a little peppery kick that pairs beautifully with the creamy mayo and crunchy lettuce. The bun itself is soft yet sturdy enough to hold it all together. Comfort food done right.
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> The Sausage Crater - Rs 240 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                This is more indulgent – a cheesy, meaty bake with sausage chunks nestled into a soft bread base. Each bite is a mix of gooey cheese, smoky sausage, and that satisfying bread pull. It’s hearty, and honestly, you could share this if you’re planning to try multiple dishes.    
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Kimchi Korean Bun - Rs 145 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                A personal favorite! This bun has that distinct umami punch from the kimchi – slightly sour, spicy, and tangy – balanced with soft bread and a hint of sweetness. It’s unique for Mangalore, and Buco nails the flavor profile. Great for adventurous eaters.
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">  Chilli Cheese Toast - Rs 190  </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Classic café comfort. Thick slices of bread topped with gooey, stretchy cheese and a spicy chili hit. Simple, nostalgic, and very snackable. I could easily see myself ordering this every time as a side to coffee.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> BBQ Chicken Bun - Rs 295 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                A fluffy bun stuffed with smoky BBQ chicken filling. The flavors lean slightly sweet with a tangy barbecue glaze that lingers on the palate. It’s comforting and hearty without being overwhelming.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Lemon Chello & Berry Cheesecake - Rs 220</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                This dessert is a stunner – light, zesty, and refreshing. The lemon notes are bright and clean, cutting through the richness of the cheesecake, while the berries add that sweet-tart balance. It’s plated beautifully, so half the joy is in just looking at it before digging in.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Carrot Ghee Cake - Rs 120 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                A slice of nostalgia. Dense, moist, and fragrant with ghee – it feels like something your grandma might bake, only elevated. The earthy sweetness of carrot shines through, and the ghee gives it a rich, buttery finish.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">Strawberry Shawty - Rs 190 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                A chilled dessert cup layered with cream, sponge, and strawberry. Light, fruity, and perfect if you don’t want something too heavy after a big meal. The strawberries taste fresh, and the cream is not overly sweet, which I appreciated.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Moccachino - Rs 180  </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                The perfect balance of coffee and chocolate. Smooth, not too bitter, with just enough sweetness to make it indulgent. A reliable pick for those who like their coffee with a dessert-like twist.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">Mango Shawty - Rs 210  </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Seasonal, tropical, and bursting with mango flavor. Similar in concept to the strawberry version but richer, thanks to the king of fruits. A must-try when mangoes are in season.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Nutella 3.0 - Rs 190 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                This is for the chocolate lovers. A decadent dessert drink/dish that layers Nutella in a way that feels indulgent but not cloying. Rich, creamy, and very satisfying.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Iced Filter - Rs 190 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                A modern take on the traditional South Indian filter coffee. Strong, aromatic, and refreshing over ice. Perfect for those who want the robustness of filter coffee but in a cooler, more café-style presentation.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Iced Americano - Rs 200 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Crisp, clean, and bold. Nothing fancy here, just straight-up strong coffee on ice. Great for purists who like it black and refreshing.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">  Butterfly Effect - Rs 190 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                One of Buco’s more playful drinks – made with butterfly pea flower tea that changes color when citrus is added. Light, floral, slightly citrusy – more of an experience than just a drink.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">  Sunset On Ice - Rs 190  </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                A beautiful layered drink that looks like a sunset in a glass. Fruity, tangy, and refreshing – perfect for summer.        
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">  Passion fruit Soda - Rs 190 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Bright, tropical, and tangy with that fizzy punch. It wakes up your palate instantly and pairs really well with their savory food items.           
+                            </p>
+                            <br>
+                            
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Orange Is The New Black - Rs 200 </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Another visual beauty – orange juice layered with coffee. The flavors are bold and a little unusual at first sip, but they grow on you. The citrus lifts the bitterness of the coffee, creating a surprisingly refreshing drink.        
+                            </p>          
+        
+                        </div>
+
+                        <!-- Rating Summary -->
+                        <div class="bg-gradient-to-r from-orange-100 to-pink-100 p-8 rounded-2xl">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"> <center> Final Thoughts </center> </h2> 
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    Buco is more than just a café – it’s a space where food, design, and culture come together. From the thoughtfully designed interiors to the carefully crafted menu, every element here speaks of passion and attention to detail.     
+                                </p>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    In a city where consistency is often hard to come by, Buco has managed to create a name for itself by ensuring that whether it’s a quick bun, a decadent dessert, or a beautifully brewed coffee – the quality never falters.    
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    For me, Buco isn’t just one of the best cafés in Mangalore – it’s the spot where tradition, creativity, and reliability meet.    
+                                </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Restaurant Info -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-24">
+                    
+                    <!-- Ratings Card -->
+                    <div class="info-card fade-in">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Restaurant Ratings</h3>
+                        
+                        <!-- Service Rating -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xl text-gray-700">Service</span>
+                                <span class="text-xl text-gray-600">5.0/5</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Food Quality Rating -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xl text-gray-700">Food Quality</span>
+                                <span class="text-xl text-gray-600">5.0/5</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Value For Money Rating -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xl text-gray-700">Value for Money</span>
+                                <span class="text-xl text-gray-600">4.0/5</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Halal Status -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl text-gray-700">Halal Certified</span>
+                                <span class="halal-badge halal-yes">
+                                    Halal
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Overall Rating -->
+                        <div class="border-t pt-4">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-gray-800">Overall Rating</span>
+                                <div class="flex items-center">
+                                    <span class="text-2xl font-bold text-orange-500 mr-2">5.0</span>
+                                    <div class="star-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location & Contact Card -->
+                    <div class="info-card fade-in">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Location & Contact</h3>
+                        
+                        <!-- Map Embed -->
+                        <div class="mt-6">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4887.226893186296!2d74.85169549999999!3d12.874018699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35b9d94d309dd%3A0x765f704b23684ab3!2sbuco.!5e1!3m2!1sen!2sin!4v1758800117515!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <br>
+                        
+                        <!-- Address -->
+                        <div class="mb-4">
+                            <div class="flex items-start">
+                                <div class="text-orange-500 mr-3 mt-1">📍</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Address</p>
+                                    <p class="text-gray-600 text-sm">1st floor, GML complex,<br>Arya Samaj Rd, Mallikatte, Balmatta<br>Mangaluru, Karnataka 575003</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-4">
+                            <div class="flex items-center">
+                                <div class="text-orange-500 mr-3">📞</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Phone</p>
+                                    <a href="tel:+81335571496" class="text-orange-500 hover:text-orange-600 text-sm">+91 81050-83888</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="mb-4">
+                            <div class="flex items-start">
+                                <div class="text-orange-500 mr-3 mt-1">🕐</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Hours</p>
+                                    <p class="text-gray-600 text-sm">Mon: Closed<br>Tue - Fri: 12:00 PM - 9:00 PM<br>Sat - Sun: 12:00 PM - 10:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Range -->
+                        <div class="mb-6">
+                            <div class="flex items-center">
+                                <div class="text-orange-500 mr-3">💰</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Price Range</p>
+                                    <p class="text-gray-600 text-sm"> ₹ 500 - ₹ 1,200 per person</p>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Instagram -->
+                        <div class="mb-6">
+                            <div class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <i class="fab fa-instagram text-pink-500 text-2xl hover:scale-110 transition-transform"></i>
+                                
+                                <!-- Text -->
+                                <div>
+                                    <p class="font-medium text-gray-800">Instagram</p>
+                                    <a href="https://instagram.com/bucoindia" target="_blank" rel="noopener noreferrer" 
+                                        class="text-gray-600 text-sm hover:underline">
+                                        @bucoindia
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reservation Note -->
+                        <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                            <div class="flex items-start">
+                                <div class="text-yellow-600 mr-2">⚠️</div>
+                                <div>
+                                    <p class="font-medium text-yellow-800 text-sm">Reservation Not Required</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- Food Gallery -->
+<section class="py-16 px-6 bg-gray-50">
+    <div class="container mx-auto max-w-6xl">
+        <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">Food Gallery</h3>
+        <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-8"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Item -->
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Mr Bobs Burger.webp" 
+             alt="Mr Bobs Fried Chicken Burger" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Mr Bobs Fried Chicken Burger</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Sausage-Crater.webp" 
+             alt="The Sausage Crater" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">The Sausage Crater</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Kimchi Korean Bun.webp" 
+             alt="Kimchi Korean Bun" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Kimchi Korean Bun</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Chilli-Cheese-Toast.webp" 
+             alt="Chilli Cheese Toast" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Chilli Cheese Toast</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/BBQ Chicken Bun.webp" 
+             alt="BBQ Chicken Bun" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">BBQ Chicken Bun</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Lemon Chello & Berry Cheesecake.webp" 
+             alt="Lemon Chello & Berry Cheesecake" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Lemon Chello & Berry Cheesecake</p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../assets/images/Restaurants/Food/Carrot-Cake.webp" 
+             alt="Carrot Ghee Cake" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium">Carrot Ghee Cake</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12 fade-in">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <div class="space-y-2">
+                    <a href="../../../home/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Home</a>
+                    <a href="../../../reviews/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Reviews</a>
+                    <a href="../../../portfolio/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Portfolio</a>
+                    <a href="../../../about/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">About Us</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <img src="../../../assets/images/logo_small.png" alt="Logo" class="h-[100px] w-auto mb-3">
+                <p class="text-2xl font-bold">The Big Hungry Panda</p>
+                <p class="text-gray-400 font-medium text-lg">Always Hungry</p>
+            </div>
+            <div>
+                <div class="flex justify-center md:justify-end">
+                    <div class="inline-block">
+                        <h3 class="text-lg font-semibold mb-4 text-center md:text-right">Follow Us</h3>
+                        <a href="https://instagram.com/thebighungrypanda" target="_blank" rel="noopener noreferrer"
+                            class="block mx-auto w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-instagram text-white text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2025 The Big Hungry Panda. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../../../assets/js/script.js"></script>
+</body>
+</html>

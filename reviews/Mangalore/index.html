@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Hungry Panda - Food Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../assets/images/logo.png"/>
+
+    <!-- Link Preview -->
+    <meta property="og:title" content="The Big Hungry Panda" />
+    <meta property="og:description" content="Big appetite. Bigger stories. Dive into food reviews and discoveries from streets, cafés, and hidden gems across Asia." />
+    <meta property="og:image" content="https://thebighungrypanda.com/assets/images/logoH.png" />
+    <meta property="og:url" content="https://thebighungrypanda.com/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body class="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen">
+
+<!-- Header -->
+<header class="bg-white/100 backdrop-blur-md shadow-sm sticky top-0 z-50 fade-in">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="hidden md:flex space-x-8">
+                <a href="../../home/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Home</a>
+                <a href="../../reviews/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Reviews</a>
+            </div>
+            <div class="flex items-center">
+                <img src="../../assets/images/logoH.png" alt="Logo" class="h-13 w-auto">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="../../portfolio/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Portfolio</a>
+                <a href="../../about/index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">About Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden text-center">
+            <a href="../../home/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Home</a>
+            <a href="../../reviews/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Reviews</a>
+            <a href="../../portfolio/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Portfolio</a>
+            <a href="../../about/index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">About Us</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Page Header -->
+<section class="py-16 px-6 text-center fade-in">
+    <div class="container mx-auto max-w-4xl">
+        <h1 class="text-5xl font-bold text-gray-800 mb-6">Mangalore And It's Gems</h1>
+        <div class="w-32 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-6"></div>
+        <p class="text-xl text-gray-600 leading-relaxed">
+            Explore culinary adventures from around the globe. Click on any destination to discover the restaurants, cafes, and hidden gems that made each journey unforgettable.
+        </p>
+    </div>
+</section>
+
+<!-- Restaurants or Cafes Grid Section -->
+<section class="py-12 px-6">
+    <div class="container mx-auto max-w-8xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
+
+            <!-- BuCo -->
+            <a href="../../reviews/mangalore/Buco/index.html">
+                <div class="restaurant-card h-64 rounded-2xl">
+                    <img src="../../assets/images/Restaurants/BuCo.png" alt="Mangalore" class="w-full h-full object-contain rounded-2xl">
+                </div>
+            </a>
+
+            <!-- Diesel Cafe -->
+            <a href="#">
+                <div class="restaurant-card h-64 rounded-2xl">
+                    <img src="../../assets/images/Restaurants/Diesel.png" alt="Bangalore" class="w-full h-full object-contain rounded-2xl">
+                </div>
+            </a>
+
+            <!-- Halo Garden Cafe -->
+            <a href="#">
+                <div class="restaurant-card h-64 rounded-2xl">
+                    <img src="../../assets/images/Restaurants/HaloGardenCafe.png" alt="Chennai" class="w-full h-full object-contain rounded-2xl">
+                </div>
+            </a>
+
+            <!-- TLC Art Cafe -->
+            <a href="#">
+                <div class="restaurant-card h-64 rounded-2xl">
+                    <img src="../../assets/images/Restaurants/TLCCafe.png" alt="Pondicherry" class="w-full h-full object-contain rounded-2xl">
+                </div>
+            </a>
+
+            <!-- Mandala Cafe -->
+            <a href="#">
+                <div class="restaurant-card h-64 rounded-2xl">
+                    <img src="../../assets/images/Restaurants/Mandala.png" alt="Kochi" class="w-full h-full object-contain rounded-2xl">
+                </div>
+            </a>
+
+            <!-- Curry Wok -->
+            <a href="#">
+                <div class="restaurant-card h-64 rounded-2xl">
+                    <img src="../../assets/images/Restaurants/CurryWok.png" alt="Coorg" class="w-full h-full object-contain rounded-2xl">
+                </div>
+            </a>
+
+            <!-- Add rest of cards the same way -->
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12 fade-in">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <div class="space-y-2">
+                    <a href="../../home/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Home</a>
+                    <a href="../../reviews/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Reviews</a>
+                    <a href="../../portfolio/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Portfolio</a>
+                    <a href="../../about/index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">About Us</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <img src="../../assets/images/logo_small.png" alt="Logo" class="h-[100px] w-auto mb-3">
+                <p class="text-2xl font-bold">The Big Hungry Panda</p>
+                <p class="text-gray-400 font-medium text-lg">Always Hungry</p>
+            </div>
+            <div>
+                <div class="flex justify-center md:justify-end">
+                    <div class="inline-block">
+                        <h3 class="text-lg font-semibold mb-4 text-center md:text-right">Follow Us</h3>
+                        <a href="https://instagram.com/thebighungrypanda" target="_blank" rel="noopener noreferrer"
+                            class="block mx-auto w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-instagram text-white text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2025 The Big Hungry Panda. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../../assets/js/script.js"></script>
+</body>
+</html>
