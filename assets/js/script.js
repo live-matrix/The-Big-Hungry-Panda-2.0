@@ -108,6 +108,8 @@ document.querySelectorAll('.star-rating').forEach(rating => {
 
 
 // Lightbox for gallery
+
+// Lightbox for gallery
 const foodImages = document.querySelectorAll('.food-img');
 
 foodImages.forEach((img, index) => {
@@ -127,7 +129,7 @@ foodImages.forEach((img, index) => {
     overlay.style.justifyContent = 'center';
     overlay.style.zIndex = 10000;
     overlay.style.transition = 'opacity 0.3s ease';
-    
+
     // Click outside to close
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay) {
@@ -153,6 +155,15 @@ foodImages.forEach((img, index) => {
       fullImg.style.opacity = 1;
     });
 
+    // Function to change image
+    const changeImage = () => {
+      fullImg.style.opacity = 0;
+      setTimeout(() => {
+        fullImg.src = foodImages[currentIndex].src;
+        fullImg.style.opacity = 1;
+      }, 200);
+    };
+
     // Create navigation arrows
     const createArrow = (direction) => {
       const arrow = document.createElement('div');
@@ -161,29 +172,37 @@ foodImages.forEach((img, index) => {
       arrow.style.top = '50%';
       arrow.style[direction] = '20px';
       arrow.style.transform = 'translateY(-50%)';
-      arrow.style.fontSize = '3rem';
+      arrow.style.width = '50px';
+      arrow.style.height = '50px';
+      arrow.style.display = 'flex';
+      arrow.style.alignItems = 'center';
+      arrow.style.justifyContent = 'center';
+      arrow.style.fontSize = '2rem';
       arrow.style.color = 'white';
       arrow.style.cursor = 'pointer';
       arrow.style.userSelect = 'none';
-      arrow.style.padding = '0 10px';
-      arrow.style.backgroundColor = 'rgba(0,0,0,0.3)';
+      arrow.style.backgroundColor = 'rgba(0,0,0,0.5)';
       arrow.style.borderRadius = '50%';
+      arrow.style.transition = 'background 0.3s ease';
+
+      arrow.addEventListener('mouseover', () => {
+        arrow.style.backgroundColor = 'rgba(0,0,0,0.8)';
+      });
+      arrow.addEventListener('mouseout', () => {
+        arrow.style.backgroundColor = 'rgba(0,0,0,0.5)';
+      });
+
       overlay.appendChild(arrow);
 
       arrow.addEventListener('click', (e) => {
         e.stopPropagation(); // Prevent closing overlay
-        if (direction === 'left') currentIndex = (currentIndex - 1 + foodImages.length) % foodImages.length;
-        else currentIndex = (currentIndex + 1) % foodImages.length;
+        if (direction === 'left') {
+          currentIndex = (currentIndex - 1 + foodImages.length) % foodImages.length;
+        } else {
+          currentIndex = (currentIndex + 1) % foodImages.length;
+        }
         changeImage();
       });
-    };
-
-    const changeImage = () => {
-      fullImg.style.opacity = 0;
-      setTimeout(() => {
-        fullImg.src = foodImages[currentIndex].src;
-        fullImg.style.opacity = 1;
-      }, 200);
     };
 
     createArrow('left');
