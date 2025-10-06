@@ -82,33 +82,6 @@ document.querySelectorAll('.city-card').forEach(card => {
     });
 });
 
-// ======================
-// Interactive Star Ratings
-// ======================
-document.querySelectorAll('.star-rating').forEach(rating => {
-    const stars = rating.querySelectorAll('.star');
-
-    stars.forEach((star, index) => {
-        star.addEventListener('mouseenter', () => {
-            stars.forEach((s, i) => {
-                s.style.color = i <= index ? '#fbbf24' : '#d1d5db';
-                s.style.transform = i <= index ? 'scale(1.1)' : 'scale(1)';
-            });
-        });
-
-        star.addEventListener('mouseleave', () => {
-            stars.forEach(s => {
-                s.style.transform = 'scale(1)';
-                s.style.color = s.classList.contains('filled') ? '#fbbf24' : '#d1d5db';
-            });
-        });
-    });
-});
-
-
-
-// Lightbox for gallery
-
 // Lightbox for gallery
 const foodImages = document.querySelectorAll('.food-img');
 

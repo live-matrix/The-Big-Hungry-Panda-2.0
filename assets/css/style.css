@@ -202,17 +202,25 @@ body {
 
         .star {
             font-size: 1.25rem;
-            color: #d1d5db;
-            cursor: pointer;
-            transition: all 0.2s ease;
+            color: #d1d5db; /* Empty star */
         }
 
         .star.filled {
-            color: #fbbf24;
+            color: #fbbf24; /* Filled star color */
         }
 
-        .star:hover {
-            transform: scale(1.1);
+        .star.half {
+            position: relative;
+            color: #d1d5db; /* Half star color */
+        }
+
+        .star.half::before {
+            content: "★";
+            color: #fbbf24;
+            position: absolute;
+            left: 0;
+            width: 50%;
+            overflow: hidden;
         }
 
         .review-image {
