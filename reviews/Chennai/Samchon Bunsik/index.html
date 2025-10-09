@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Hungry Panda - Food Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../../assets/images/logo.png"/>
+
+    <!-- Open Graph (OG) Link Preview -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://live-matrix.github.io/The-Big-Hungry-Panda-2.0/assets/images/logoH.png" />
+    <meta property="og:url" content="https://live-matrix.github.io/The-Big-Hungry-Panda-2.0/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://live-matrix.github.io/The-Big-Hungry-Panda-2.0/" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="https://live-matrix.github.io/The-Big-Hungry-Panda-2.0/assets/images/twittercard.png" />
+
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body class="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen">
+
+<!-- Header -->
+<header class="bg-white/100 backdrop-blur-md shadow-sm sticky top-0 z-50 fade-in">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="hidden md:flex space-x-8">
+                <a href="../../../index.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Home</a>
+                <a href="../../../reviews/reviews.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Reviews</a>
+            </div>
+           
+            <!-- Logo -->
+            <div class="flex items-center justify-center flex-1 md:flex-none">
+                <a href="../../../index.html" class="flex items-center justify-center w-full">
+                <img src="../../../assets/images/logoH.png" srcset="../../../assets/images/logoH.png 2x" alt="Logo" class="h-15 w-auto object-contain mx-auto">
+                </a>
+            </div>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="../../../portfolio/portfolio.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">Portfolio</a>
+                <a href="../../../about/about.html" class="nav-link text-gray-700 text-xl hover:text-orange-500 font-medium">About Us</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden text-center">
+            <a href="../../../index.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Home</a>
+            <a href="../../../reviews/reviews.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Reviews</a>
+            <a href="../../../portfolio/portfolio.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">Portfolio</a>
+            <a href="../../../about/about.html" class="nav-link text-gray-700 text-lg hover:text-orange-500 font-medium block">About Us</a>
+        </div>
+    </nav>
+</header>
+
+<body class="bg-gradient-to-br from-orange-50 to-pink-50 min-h-screen">
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid lg:grid-cols-3 gap-12">
+            
+            <!-- Left Side - Detailed Review -->
+            <div class="lg:col-span-2">
+
+                <!-- Restaurant Header -->
+                <div class="fade-in mb-8">
+                    <div class="flex items-center mb-4">
+                        <a href="../../../reviews/Chennai/index.html" class="text-orange-500 hover:text-orange-600 font-medium mr-3">← Back to Reviews</a>
+                        <span class="text-gray-400">|</span>
+                        <span class="text-gray-600 ml-3">Chennai, India</span>
+                    </div>
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Samchon Bunsik</h1>
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 mr-3">
+                            ⭐⭐⭐⭐
+                        </div>
+                        <span class="text-gray-600 font-medium">4.0 Overall Rating</span>
+                        <span class="mx-3 text-gray-400">•</span>
+                        <span class="text-gray-600">Reviewed 20 September 2025</span>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="fade-in mb-8">
+                    <section class="relative w-full h-[250px] m:h-[400px] md:h-[500px] flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden mb-16">
+                        <img src="../../../reviews/Chennai/Samchon Bunsik/SamchonBunsikInt.webp" 
+                            alt="Restaurant Interior" 
+                            class="w-full h-full object-cover">
+                    </section>
+                </div>
+
+                <!-- Review Content -->
+                <div class="fade-in">
+                    <div class="prose prose-lg max-w-none">
+                        
+                        <!-- Introduction -->
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"> <center> Korean Street Food Finds Its Heart in Chennai </center> </h2> 
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Ever since my first K-Drama "Itaewon Class" I’ve been captivated by the way Korean food weaves itself into every frame: comforting, colourful, and full of emotion. That quiet curiosity eventually turned into a craving. The first time I tried Korean food in Bangalore, I was instantly hooked. It’s not something one can indulge in too often here, given how expensive authentic Korean fare tends to be in India, so each experience becomes something to savour, something to look forward to every few months.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                That’s exactly what brought me to Samchon Bunsik, a charming new entrant in Chennai’s growing Korean food scene. Founded by Kim Myung Soo and Kim Hyo Jin, a couple from South Korea, the restaurant channels the warmth and simplicity of Korean street food - or bunsik - into a lively, casual dining experience. With roots in running a corndog shop back home, the duo now brings a taste of Seoul’s bustling food alleys to this corner of Chennai. The space itself is intimate - nine tables, a high-stool counter, and a glass-fronted window that floods the room with natural light. It’s small, bright, and buzzing with chatter especially on weekends when walk-ins fill the place fast.
+                            </p>
+                        </div>
+
+                        <!-- Here's What I Had -->
+                        <div class="mb-8">
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> <center> Here's What I Had </center> </h2>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Ramyeon Tteok-Bokki - Rs  490</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                This dish was pure indulgence! the kind of comfort food that warms you from the inside out. The chewy rice cakes soaked up the spicy, gochujang-based sauce perfectly, while the springy noodles added an extra layer of heartiness. The sauce itself was a beautiful balance of heat, sweetness, and deep umami, coating every strand of noodle in that signature fiery red hue. A boiled egg on the side added richness, while spring onions brought freshness to each bite. It’s the kind of dish you can’t stop eating, comforting, addictive, and unmistakably Korean.
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Yang Neom Chicken - Rs 499</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Golden, glossy, and everything you’d want from Korean fried chicken. Each piece was shatteringly crisp on the outside, tender within, and coated in a sticky glaze that struck the perfect harmony between sweet, spicy, and garlicky. The balance was spot-on, never too sugary, never too fiery. The pickled radish served alongside cut through the richness with its sharp tang, keeping every bite fresh and exciting. Portion-wise, it’s generous and meant to be shared, though you might not want to.
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4"> Dak Galbi Deopbap - Rs  690</h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Bold, hearty, and deeply satisfying. The stir-fried chicken carried that signature smoky edge, beautifully caramelised and coated in a sweet-spicy sauce. The rice beneath soaked up all the flavours, while bits of cabbage added crunch and contrast. What took it over the top, though, was the melted cheese, creamy, gooey, and indulgent, bringing everything together in each spoonful. It’s the kind of meal that leaves you full, happy, and craving just one more bite.
+                            </p>
+                            <br>
+
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">  Dalgona Latte - Rs 290  </h2>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                A nostalgic, comforting finish to the meal. The Dalgona Latte was a lovely blend of creamy milk and espresso, elevated by shards of brittle dalgona candy that slowly melted into the drink. The burnt caramel tones from the candy played beautifully with the coffee’s bitterness, creating a balance that was sweet yet grounded. A drink that’s both aesthetic and soulful, just what you’d expect from a place that celebrates Korean comfort culture.
+                            </p>
+                            <br>
+
+                        </div>
+
+                        <!-- Final Thoughts -->
+                        <div class="bg-gradient-to-r from-orange-100 to-pink-100 p-8 rounded-2xl">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4"> <center> Final Thoughts </center> </h2> 
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    Samchon Bunsik brings something truly special to Chennai, a slice of everyday Korean street life, recreated with sincerity and care. Every dish feels like a small window into a culture that celebrates balance, spice meeting sweetness, indulgence tempered by comfort. What stands out most, however, is not just the authenticity of flavours, but the emotion behind them. You can taste the passion of the couple who run it, their quiet pride in serving food that’s true to its roots, yet perfectly adapted for local palates.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    This isn’t a fine-dine experience, it’s homely, lively, and full of energy much like a Korean street corner eatery where people gather over comforting bowls of ramen or crispy fried chicken. The natural light, the smell of spice in the air, and the warmth of the service all come together to create an atmosphere that’s refreshingly real.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    For anyone curious about Korean cuisine or looking to relive their K-drama food dreams, Samchon Bunsik hits the right notes! Its affordable, flavourful, and unapologetically authentic. It’s not just a meal, it’s an experience that lingers, the kind that reminds you how good food can make even a new city feel a little like home.
+                                </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Restaurant Info -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-24">
+                    
+                    <!-- Ratings Card -->
+                    <div class="info-card fade-in">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Restaurant Ratings</h3>
+                        
+                        <!-- Service Rating -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xl text-gray-700">Service</span>
+                                <span class="text-xl text-gray-600">3.5/5</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star half">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Food Quality Rating -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xl text-gray-700">Food Quality</span>
+                                <span class="text-xl text-gray-600">4.0/5</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Value For Money Rating -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xl text-gray-700">Value for Money</span>
+                                <span class="text-xl text-gray-600">4.5/5</span>
+                            </div>
+                            <div class="star-rating">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star half">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Halal Status -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl text-gray-700">Halal Certified</span>
+                                <span class="halal-badge halal-yes">
+                                    Halal
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Overall Rating -->
+                        <div class="border-t pt-4">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-gray-800">Overall Rating</span>
+                                <div class="flex items-center">
+                                    <span class="text-2xl font-bold text-orange-500 mr-2">4.0</span>
+                                    <div class="star-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Location & Contact Card -->
+                    <div class="info-card fade-in">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Location & Contact</h3>
+                        
+                        <!-- Map Embed -->
+                        <div class="mt-6">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.816725570153!2d80.2553367!3d12.983571200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525dd12b2a7f67%3A0x86ad9d083d4d93b4!2sSamchon%20Bunsik!5e0!3m2!1sen!2sin!4v1760019120382!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <br>
+                        
+                        <!-- Address -->
+                        <div class="mb-4">
+                            <div class="flex items-start">
+                                <div class="text-orange-500 mr-3 mt-1">📍</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Address</p>
+                                    <p class="text-gray-600 text-sm">First floor, Door no 73/3A, Plot no.321,<br>  E 4th Main Rd, Kamaraj Nagar, Thiruvanmiyur,<br>  Chennai, Tamil Nadu 600041</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-4">
+                            <div class="flex items-center">
+                                <div class="text-orange-500 mr-3">📞</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Phone</p>
+                                    <a href="tel:+919840984397" class="text-orange-500 hover:text-orange-600 text-sm">+91 98409-84397</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="mb-4">
+                            <div class="flex items-start">
+                                <div class="text-orange-500 mr-3 mt-1">🕐</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Hours</p>
+                                    <p class="text-gray-600 text-sm">Mon - Sun: 10:00 AM - 10:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price Range -->
+                        <div class="mb-6">
+                            <div class="flex items-center">
+                                <div class="text-orange-500 mr-3">💰</div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Price Range</p>
+                                    <p class="text-gray-600 text-sm"> ₹ 700 - ₹ 1,800 per person</p>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!-- Instagram -->
+                        <div class="mb-6">
+                            <div class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <i class="fab fa-instagram text-pink-500 text-2xl hover:scale-110 transition-transform"></i>
+                                
+                                <!-- Text -->
+                                <div>
+                                    <p class="font-medium text-gray-800">Instagram</p>
+                                    <a href="https://instagram.com/samchonbunsik" target="_blank" rel="noopener noreferrer" 
+                                        class="text-gray-600 text-sm hover:underline">
+                                        @samchonbunsik
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reservation Note -->
+                        <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                            <div class="flex items-start">
+                                <div class="text-yellow-600 mr-2">⚠️</div>
+                                <div>
+                                    <p class="font-medium text-yellow-800 text-sm">The café does not accept reservations, so only walk-ins are allowed. Arriving a bit early is recommended to secure a table.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- Food Gallery -->
+<section class="py-16 px-6 bg-gray-50">
+    <div class="container mx-auto max-w-6xl">
+        <h3 class="text-4xl font-bold text-gray-800 mb-8 text-center">Food Gallery</h3>
+        <div class="w-24 h-1 bg-gradient-to-r from-orange-400 to-pink-400 mx-auto mb-8"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Item -->
+      <div class="text-center">
+        <img src="../../../reviews/Chennai/Samchon Bunsik/Ramyeon Tteok Bokki.webp" 
+             alt="Ramyeon Tteok Bokki" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium"> Ramyeon Tteok Bokki </p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../reviews/Chennai/Samchon Bunsik/Yang Neom Chicken.webp" 
+             alt="Yang Neom Chicken" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium"> Yang Neom Chicken </p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../reviews/Chennai/Samchon Bunsik/Dak Galbi Deopbap.webp" 
+             alt="Dak Galbi Deopbap" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium"> Dak Galbi Deopbap </p>
+      </div>
+
+      <div class="text-center">
+        <img src="../../../reviews/Chennai/Samchon Bunsik/Dalgona Latte.webp" 
+             alt="Dalgona Latte" 
+             class="food-img w-full h-64 object-cover rounded-xl cursor-pointer">
+        <p class="mt-3 text-gray-700 font-medium"> Dalgona Latte </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12 fade-in">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <div class="space-y-2">
+                    <a href="../../../index.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Home</a>
+                    <a href="../../../reviews/reviews.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Reviews</a>
+                    <a href="../../../portfolio/portfolio.html" class="block text-gray-300 hover:text-orange-400 transition-colors">Portfolio</a>
+                    <a href="../../../about/about.html" class="block text-gray-300 hover:text-orange-400 transition-colors">About Us</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <img src="../../../assets/images/logo_small.png" alt="Logo" class="h-[100px] w-auto mb-3">
+                <p class="text-2xl font-bold">The Big Hungry Panda</p>
+                <p class="text-gray-400 font-medium text-lg">Always Hungry</p>
+            </div>
+            <div>
+                <div class="flex justify-center md:justify-end">
+                    <div class="inline-block">
+                        <h3 class="text-lg font-semibold mb-4 text-center md:text-right">Follow Us</h3>
+                        <a href="https://instagram.com/thebighungrypanda" target="_blank" rel="noopener noreferrer"
+                            class="block mx-auto w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-instagram text-white text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2025 The Big Hungry Panda. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../../../assets/js/script.js"></script>
+</body>
+</html>
