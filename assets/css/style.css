@@ -196,32 +196,38 @@ body {
         }
 
         .star-rating {
-            display: flex;
-            gap: 2px;
-        }
+  display: flex;
+  gap: 2px;
+}
 
-        .star {
-            font-size: 1.25rem;
-            color: #d1d5db; /* Empty star */
-        }
+.star {
+  font-size: 1.52rem;
+  color: #d1d5db; /* Empty star */
+  -webkit-text-stroke: 0.8px black; /* Black outline */
+}
 
-        .star.filled {
-            color: #fbbf24; /* Filled star color */
-        }
+.star.filled {
+  color: #fbbf24; /* Filled star color */
+  -webkit-text-stroke: 0.8px black; /* Keep black outline */
+}
 
-        .star.half {
-            position: relative;
-            color: #d1d5db; /* Half star color */
-        }
+.star.half {
+  position: relative;
+  color: #d1d5db; /* Base star color */
+  -webkit-text-stroke: 0.8px black;
+}
 
-        .star.half::before {
-            content: "★";
-            color: #fbbf24;
-            position: absolute;
-            left: 0;
-            width: 50%;
-            overflow: hidden;
-        }
+.star.half::before {
+  content: "★";
+  color: #fbbf24;
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  -webkit-text-stroke: 0.8px black;
+
+}
+
 
         .review-image {
             border-radius: 1rem;
@@ -268,6 +274,13 @@ body {
             background: linear-gradient(135deg, #fed346, #f6d11b);
             color: rgb(0, 0, 0);
         }
+
+        .review-date {
+            font-weight: 500;
+            color: #6b7280; /* Tailwind gray-500 */
+            font-size: 1rem;
+        }
+
 
 
 
